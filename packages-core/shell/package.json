@@ -17,7 +17,9 @@
     "webpack:dev": "NODE_ENV=development webpack --config .webpack/webpack.config.js",
     "build:types": "tsc --emitDeclarationOnly",
     "analyse:bundlesize": "yarn webpack:prod && yarn bundlesize",
-    "bundlesize": "bundlesize"
+    "bundlesize": "bundlesize",
+    "link:all": "yarn link",
+    "unlink:all": "yarn unlink"
   },
   "dependencies": {
     "@micro-ux/micro-dash.poll": "0.13.0"

@@ -13,7 +13,9 @@
     "clean": "rm -r dist/",
     "build": "yarn build:specs",
     "build:specs": "yarn clean; yarn build:types",
-    "build:types": "tsc --emitDeclarationOnly"
+    "build:types": "tsc --emitDeclarationOnly",
+    "link:all": "yarn link",
+    "unlink:all": "yarn unlink"
   },
   "devDependencies": {
     "@micro-ux/build-typescript": "0.1.2"
