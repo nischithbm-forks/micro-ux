@@ -22,11 +22,9 @@
     "unlink:all": "yarn unlink"
   },
   "devDependencies": {
-    "@micro-ux/build-typescript": "0.1.2",
-    "@micro-ux/build-webpack": "0.1.2",
-    "@micro-ux/specs": "^0.0.1",
-    "bundlesize": "0.18.0",
-    "typescript": "4.0.3"
+    "@micro-ux/build-typescript": "0.1.3",
+    "@micro-ux/build-webpack": "0.1.3",
+    "@micro-ux/specs": "0.0.1"
   },
   "engines": {
     "node": ">=10.13.0"

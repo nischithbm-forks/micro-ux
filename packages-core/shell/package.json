@@ -25,12 +25,10 @@
     "@micro-ux/micro-dash.poll": "0.13.0"
   },
   "devDependencies": {
-    "@micro-ux/build-typescript": "0.1.2",
-    "@micro-ux/build-webpack": "0.1.2",
-    "@micro-ux/core": "^0.0.1",
-    "@micro-ux/specs": "^0.0.1",
-    "bundlesize": "0.18.0",
-    "typescript": "4.0.3"
+    "@micro-ux/build-typescript": "0.1.3",
+    "@micro-ux/build-webpack": "0.1.3",
+    "@micro-ux/core": "0.0.1",
+    "@micro-ux/specs": "0.0.1"
   },
   "engines": {
     "node": ">=10.13.0"
