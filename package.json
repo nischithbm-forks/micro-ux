@@ -15,6 +15,7 @@
     "build:specs": "lerna run build:specs",
     "build:core": "lerna run build:core",
     "build:shell": "lerna run build:shell",
+    "publish:all": "lerna publish",
     "link:all": "yarn link:build-typescript && yarn link:build-webpack",
     "link:build-typescript": "yarn link @micro-ux/build-typescript",
     "link:build-webpack": "yarn link @micro-ux/build-webpack"
