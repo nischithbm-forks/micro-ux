@@ -1,0 +1,37 @@
+{
+  "name": "@micro-ux/core",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "repository": "git@github.com:micro-ux/micro-ux.git",
+  "author": "Nischith BM <nischithbm@gmail.com>",
+  "scripts": {
+    "build": "yarn build:core",
+    "build:core": "yarn build:prod",
+    "build:prod": "yarn webpack:prod && yarn build:types && yarn bundlesize",
+    "build:dev": "yarn webpack:dev && yarn build:types",
+    "build:analyze:prod": "WEBPACK_PROFILE=analyze yarn webpack:prod",
+    "build:analyze:dev": "WEBPACK_PROFILE=analyze yarn webpack:dev",
+    "webpack:prod": "NODE_ENV=production webpack --config .webpack/webpack.config.js",
+    "webpack:dev": "NODE_ENV=development webpack --config .webpack/webpack.config.js",
+    "build:types": "tsc --emitDeclarationOnly",
+    "analyse:bundlesize": "yarn webpack:prod && yarn bundlesize",
+    "bundlesize": "bundlesize"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@micro-ux/build-typescript": "0.1.2",
+    "@micro-ux/build-webpack": "0.1.2",
+    "@micro-ux/specs": "0.0.1",
+    "bundlesize": "0.18.0",
+    "typescript": "4.0.3"
+  },
+  "engines": {
+    "node": ">=10.13.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

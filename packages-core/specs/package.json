@@ -1,0 +1,28 @@
+{
+  "name": "@micro-ux/specs",
+  "version": "0.0.1",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "repository": "git@github.com:micro-ux/micro-ux.git",
+  "author": "Nischith BM <nischithbm@gmail.com>",
+  "files": [
+    "dist/",
+    "README.md"
+  ],
+  "scripts": {
+    "clean": "rm -r dist/",
+    "build": "yarn build:specs",
+    "build:specs": "yarn clean; yarn build:types",
+    "build:types": "tsc --emitDeclarationOnly"
+  },
+  "devDependencies": {
+    "@micro-ux/build-typescript": "0.1.2"
+  },
+  "engines": {
+    "node": ">=10.13.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
