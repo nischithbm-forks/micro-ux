@@ -19,11 +19,10 @@
     "analyse:bundlesize": "yarn webpack:prod && yarn bundlesize",
     "bundlesize": "bundlesize"
   },
-  "dependencies": {},
   "devDependencies": {
     "@micro-ux/build-typescript": "0.1.2",
     "@micro-ux/build-webpack": "0.1.2",
-    "@micro-ux/specs": "0.0.1",
+    "@micro-ux/specs": "^0.0.1",
     "bundlesize": "0.18.0",
     "typescript": "4.0.3"
   },
